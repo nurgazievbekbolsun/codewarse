@@ -1,81 +1,41 @@
-// Задание №1
-// Напишите функцию palindrom(word), принимающая один аргумент word.
-// Функция, должна выводить в консоль true, если строка является палиндромом,
-// в обратном случае false. При этом нужно учитывать пробелы и регистр.
-// Палиндром – слово, которое читается одинаково слева направо и справа налево (например, ротор)
-
-// Пример №1:
-// Ввод: tenet
-// Ответ: true
-
-// Пример №2:
-// Ввод: my gym
-// Ответ: true
-
-// Пример №3Ж
-// Ввод: nolan
-// Вывод: false
-
-// let arr = 'pup'
-// console.log(arr.split(' ').reduce((acc, el ) => acc < el ));
-
-// function palindrome(word) {
-//     word = word.replace(/\s/g, "").toLowerCase();
-//      if (word === word.split("").reverse().join("")) {
-//          console.log(true);
-//     } else {
-//          console.log(false);
-//     }
+// function checkTask(arr){
+//     arr = arr.split(' ')
+//    return arr.map(el => el.length)
 // }
-// palindrome('nolan')
+// console.log(checkTask('jhgfhj gg'));  = [6,2]
 
-// function palindrome(str){
-//     str = str.replace(/[\s ".,!?/-]/g, '').toLowerCase()
-//     return str === str.split('').reverse().join('')
-// }
-//
-// console.log(palindrome('"Пустите!" - Летит супу миска Максиму - "Пустите,летит суп !"'))
-
-
-// Задание №2
 // Найдите самое длинное слово в строке и выведите его в консоли
-// const str = "I am a Megalodon, oceans feeling like a pond"
-// console.log(str.split(' ').map(el => el.length))
-
 // function len(str){
 //     str = str.split(' ')
 //     return str.reduce((acc,el)=>{
-//         if(el.length > acc.length){
-//             return el
-//         }else {
+//         if(acc.length > el.length){
 //             return acc
+//         }else {
+//             return el
 //         }
-//     },'')
+//     })
 // }
-//
-// console.log(len(str))
+// console.log(len('q ww eee'))  = 'eee'
 
+// const str = "I am a Megalodon, oceans"
+// console.log(str.split(' ').map(el => el.length))  = [1,2,1,9,6]
 
-// Задание №3
 // Дана функция checkTask(arr) которая принимает массив с предложениями.
 // Необходимо вернуть новый массив с количеством слов в каждом предложении.
 // Пример: ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+
 // const ar = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+// console.log(ar.map(el => el.length))         = [27,14,30]
 
 
 // function checkTask(arr){
-//     console.log(arr.map(el => el.split('').length))
+//     return arr.map(el => el.split('').length)
 // }
-// checkTask(["alice and bob love leetcode", "i think so too", "this is great thanks very much"])
-// console.log(ar.map(el => el.split(' ').length))
-// console.log(ar.map(el => el.length))
+// console.log(checkTask(["alice and", "i think so too", "this is great"])); = [9,14,13]
 
 
-
-// Задание №4
 // Дана функция checkTask(arr) которая принимает массив c числами.
 // При помощи метода reduce необходимо вернуть новый массив без дубликатов.
-//
 // Пример: Дан массив: [18, 21, 1, 1, 51, 18, 21, 5, 18, 7, 10]. Результат: [18, 21, 1, 51, 5, 7, 10]
 
 // function checkTask(arr){
@@ -90,8 +50,6 @@
 // console.log(checkTask([18, 21, 1, 1, 51, 18, 21, 5, 18, 7, 10]))
 
 
-
-// Задание №5
 // Посчитать сумму чисел до первого нуля.
 // [12, 23, 3, 77, 42, 0, 6, 9, 12, 10]
 // const numbers = [12, 23, 3, 77, 42, 0, 6, 9, 12, 10];
@@ -110,7 +68,6 @@
 // console.log(f([12, 23, 3, 77, 42, 0, 6, 9, 12, 10]));
 
 
-// Задание №6
 // Дан лимит = 1000, напишите функцию, которая будет выводить в консоль удвоенное
 // значение аргумента до тех пор, пока оно не достигнет лимита, и после этого вывести
 // в консоль аргументы в обратном порядке (использовать цикл while)
@@ -131,22 +88,12 @@
 //
 // random(50)
 
+// const arr = ['aza','bob','san']
+// const a = arr.map(el => el.slice(0,-1) + el[el.length -1].toUpperCase())
+// console.log(a)  = [azA, boB,saN]
 
 
-// const arr = ['aza','bob','sanjar']
-// const a = arr.map(el => el.slice(0,-1) + el[el.length-1].toUpperCase())
-// console.log(a)
 
-
-// const arr = ['aza','bob','sanjar','aza','bob','sanjar']
-
-// console.log(arr.map((el,inx)=>{
-//     if(inx % 2 !== 0 ){
-//         return el.toUpperCase()
-//     }else {
-//         return el
-//     }
-// }))
 
 // let arr = ['Bishkek','Naryn','Motion Web','almata']
 // console.log(arr.filter(el =>{

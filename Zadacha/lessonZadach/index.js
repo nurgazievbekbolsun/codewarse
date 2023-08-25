@@ -33,6 +33,14 @@
 // }
 // console.log(checkTask(["alice and", "i think so too", "this is great"])); = [9,14,13]
 
+// const arr = ['aza','bob','sanjar','aza','bob','sanjar']
+// console.log(arr.map((el,inx)=>{
+//     if(inx % 2 !== 0 ){
+//         return el.toUpperCase()
+//     }else {
+//         return el
+//     }
+// }))
 
 // Дана функция checkTask(arr) которая принимает массив c числами.
 // При помощи метода reduce необходимо вернуть новый массив без дубликатов.

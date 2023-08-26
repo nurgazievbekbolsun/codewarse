@@ -2,7 +2,7 @@
 //                                      1
 // function palin(str){
 //     let res = str.replace(/[\s ",.!?/-]/g, '').toLowerCase()
-//     if(res === res.split('').reverse().join('')){
+//     if(res === res.split(' ').reverse().join('')){
 //         console.log('true');
 //     } else{
 //         console.log('false');
@@ -47,16 +47,15 @@
 //                       MASIVDIN ICHINDEGI ELEMENTERDI 0 SANYNA CHEIIN KOSHU
 
 // function task(arr) {
-    //     let res = 0
-    //     for(let a = 0; a < arr.length; a++){
-    //         res += arr[a]
-    //         if(arr[a] === 0){
-    //             // res = 0
-    //             break
-    //         }
+    // let res = 0
+    // for(let a = 0; a < arr.length; a++){
+    //     res += arr[a]
+    //     if(arr[a] === 0){
+    //         // res = 0
+    //         break
     //     }
-    //     return res
     // }
+    // return res
     // console.log(task([1,2,3,4,0,92]));
     
 //                           STRAKANYN ICHINDEGI SOZDORDUN UZUNDUGUN TABY 

@@ -1,15 +1,12 @@
 //                                     POLINDROM
 //                                      1
-// function palin(str){
-//     let res = str.replace(/[\s ",.!?/-]/g, '').toLowerCase()
-//     if(res === res.split(' ').reverse().join('')){
-//         console.log('true');
-//     } else{
-//         console.log('false');
-//     }
+// function palin(str) {
+//     const cleanStr = str.replace(/[^a-z0-9]/ig, '').toLowerCase();
+//     return cleanStr === cleanStr.split('').reverse().join('');
 // }
-// console.log(palin('pup'));
-//                                        2
+
+// console.log(palin('A man, a plan, a canal, Panama!'));
+//           2
 //     function palindrome(str){
 //     str = str.replace(/[\s ".,!?/-]/g, '').toLowerCase()
 //     return str === str.split('').reverse().join('')
@@ -98,6 +95,26 @@
 // })
 // res
 
+//                        [-3,-2,0,2,5,3,4]. K = 3..... [-2,5]
 
+// let arr = [-3,-2,0,2,4,3,5,8]
+
+// function task(arr,k){
+//     let l = 0
+//     let r = arr.length -1
+
+//     while(l < r){
+//         const sum = arr[l] + arr[r]
+//         if(sum === k){
+//             return [arr[l],arr[r]]
+//         }if(sum < k){
+//             l++
+//         }else{
+//             r--
+//         }
+//     }
+//     return false
+// }
+// console.log(task(arr,3));
 
 

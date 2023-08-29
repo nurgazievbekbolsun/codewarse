@@ -63,10 +63,10 @@
 // function twoSum(nums, k) {
 //     for (let i = 0; i < nums.length; i++) {
 //         let numberToFind = k - nums[i];
-//         let l = i + 1, r = nums.length - 1;
+//         let I = i + 1, r = nums.length - 1;
 
-//         while (l <= r) {
-//             let mid = Math.floor(l + (r - l) / 2);
+//         while (I <= r) {
+//             let mid = Math.floor(I + (r - I) / 2);
 
 //             if (nums[i] === numberToFind) {
 //                 return [nums[i], nums[mid]];
@@ -75,10 +75,10 @@
 //             if (numberToFind < nums[mid]) {
 //                 r = mid - 1;
 //             } else {
-//                 l = mid + 1;
+//                 I = mid + 1;
 //             }
 //         }
 //     }
 //     return [];
 // }
-// console.log(twoSum([2,3,2,3,423,44],6));
+// console.log(twoSum([1,2,3,4,5,6],4));

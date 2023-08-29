@@ -117,4 +117,37 @@
 // }
 // console.log(task(arr,3));
 
+//                                              O(m+n) matrix
+
+// function searchMatrix(matrix, k) {
+//     if (!matrix || matrix.length === 0 || matrix[0].length === 0) {
+//         return false;
+//     }
+    
+//     const m = matrix.length;
+//     const n = matrix[0].length;
+    
+//     let i = 0;
+//     let j = n - 1;
+    
+//     while (i < m && j >= 0) {
+//         if (matrix[i][j] === k) {
+//             return true;
+//         }
+//         if (matrix[i][j] > k) {
+//             j--;
+//         } else {
+//             i++;
+//         }
+//     }
+    
+//     return false;
+// }
+// const res = searchMatrix([
+//     [1,4,7,11,15,16],
+//     [2,5,8,12,19,22],
+//     [3,6,9,16,22,24],
+//     [10,13,14,17,24,27],
+//     [18,21,23,26,30,36]],14)
+// console.log(res);
 

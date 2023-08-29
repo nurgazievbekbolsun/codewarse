@@ -63,6 +63,10 @@
 // }
 
 
+// const map = new Map()
+// const onKey = {id:4}
+// map.set(onKey,'bekbolsun')
+// console.log(map.get(onKey));
 
 // const myMap = new Map();
 // const myMap = new Map()

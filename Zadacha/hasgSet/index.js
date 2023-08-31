@@ -56,11 +56,9 @@
     
 //     return false;
 // }
-// console.log(twoSum([3,4,5,6],7));
-
 // const set = new Set()
-
 // set.add(4)
 // set.add(3)
 // set.add(4)
 // console.log(set);
+// console.log(twoSum([3,4,5,6],7));

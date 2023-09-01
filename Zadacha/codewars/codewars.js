@@ -82,6 +82,7 @@
 // }
 // console.log(stringy('2'));
 
+
 //                       base ARGUMENTTIN MANISINE KARAP limit ARGUMENTTINE CHEIIN KOSHULAT   
 
 // function findMultiples(base, limit) {

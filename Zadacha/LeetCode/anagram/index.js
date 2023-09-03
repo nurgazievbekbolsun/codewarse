@@ -2,15 +2,12 @@ function isAnagram(s, t) {
     if (s.length !== t.length) {
         return false; // Если длины строк разные, то они не могут быть анаграммами.
     }
-    
     const charCount = new Array(26).fill(0); // Создаем массив для счетчика букв (a-z).
-    
     // Увеличиваем счетчик для букв из строки s и уменьшаем для букв из строки t.
     for (let i = 0; i < s.length; i++) {
         charCount[s.charCodeAt(i) - 'a'.charCodeAt(0)]++;
         charCount[t.charCodeAt(i) - 'a'.charCodeAt(0)]--;
     }
-    
     // Если в итоге все элементы счетчика равны нулю, то строки являются анаграммами.
     return charCount.every(count => count === 0);
 }

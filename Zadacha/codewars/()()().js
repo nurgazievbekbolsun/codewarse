@@ -1,17 +1,25 @@
-function validParentheses(parenStr) {
-    const stack = []
+// function validParentheses(parenStr) {
+//     const stack = []
 
-    for(let a = 0; a < parenStr.length; a++){
-        const char = parenStr[a]
+//     for(let a = 0; a < parenStr.length; a++){
+//         const char = parenStr[a]
 
-        if(char === '('){
-            stack.push('(')
-        }else if(char === ')'){
-            if(stack.length === 0 || stack.pop() !== '('){
-                return false
-            }
-        }
+//         if(char === '('){
+//             stack.push('(')
+//         }else if(char === ')'){
+//             if(stack.length === 0 || stack.pop() !== '('){
+//                 return false
+//             }
+//         }
+//     }
+//     return stack.length === 0
+//   }
+//   console.log(validParentheses('(()())'));
+
+function validParentheses(a) {
+    while (a.includes('()')){
+      a = a.replace(/\(\)/g, '')
     }
-    return stack.length === 0
+    return a === ''
   }
-  console.log(validParentheses('(()())'));
+  console.log(validParentheses('()'));

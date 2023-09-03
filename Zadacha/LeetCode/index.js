@@ -6,7 +6,6 @@
 //             result.push(current);
 //             return;
 //         }
-
 //         if (open < n) {
 //             backtrack(current + "(", open + 1, close);
 //         }
@@ -14,7 +13,6 @@
 //             backtrack(current + ")", open, close + 1);
 //         }
 //     }
-
 //     backtrack("", 0, 0);
 //     return result;
 // }

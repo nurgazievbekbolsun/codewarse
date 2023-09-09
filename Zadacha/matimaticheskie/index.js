@@ -23,7 +23,14 @@
 // }
 // console.log(simpleMultiplication(2));
 
-function minJumps(start, finish) {
+
+/***
+ * Функция minJumps(start, finish) принимает два аргумента: start и finish, где start 
+ * представляет начальную позицию, а finish - конечную позицию. Задача функции - 
+ * определить минимальное 
+ * количество прыжков, которое нужно сделать, чт
+ * обы добраться из начальной позиции в конечную.
+ * function minJumps(start, finish) {
     let jumps = 0;
     while (start < finish) {
         if (finish - start >= 3) {
@@ -36,6 +43,8 @@ function minJumps(start, finish) {
     return jumps;
 }
 console.log(minJumps(1,5));
+ */
+
 
 // const solution = (start, finish, difference = finish - start) =>
 //   Math.floor(difference / 3) + difference % 3;

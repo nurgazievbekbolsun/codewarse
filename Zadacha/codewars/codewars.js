@@ -316,17 +316,7 @@
 
 //                                    2 -- VARIANT
 
-// function tas(str){
-//     let res = ''
-//     for(let i = 0;i < str.length; i++){
-//         if(Number(str[i]) >= 5){
-//             res += '1'
-//         }else{
-//             res += '0'
-//         }
-//     }
-//     return res
-// }
+/
 // console.log(tas('2384376'));
 
 //                                          MASIVKE SALUU
